@@ -1,6 +1,6 @@
 'use client'
 
-import { ROUTES_DATA } from '@/consts/router.data'
+import { ROUTES_DATA } from '@/shared/consts'
 import styled from '@emotion/styled/base'
 import { usePathname } from 'next/navigation'
 import { FC, PropsWithChildren } from 'react'

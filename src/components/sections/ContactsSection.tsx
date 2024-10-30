@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import { Button, Section, Title } from '@/components/ui'
 import Link from 'next/link'
-import { ROUTES_DATA } from '@/consts/router.data'
+import { ROUTES_DATA } from '@/shared/consts'
 
 const ContactsSection: FC = () => {
 	return (

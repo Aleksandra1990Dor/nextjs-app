@@ -1,7 +1,7 @@
 'use client'
 
 import { type FC } from 'react'
-import { ROUTES_DATA } from '@/consts/router.data'
+import { ROUTES_DATA } from '@/shared/consts'
 import { Button } from '@/components/ui'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'

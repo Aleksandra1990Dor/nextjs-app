@@ -12,8 +12,10 @@
     "@emotion/cache": "^11.13.1",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
+    "@mui/lab": "^6.0.0-beta.14",
     "@mui/material": "^6.1.6",
     "@mui/material-nextjs": "^6.1.6",
+    "@prisma/client": "^5.21.1",
     "next": "14.2.11",
     "react": "^18",
     "react-dom": "^18",
@@ -25,6 +27,8 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.11",
+    "prettier": "^3.3.3",
+    "prisma": "^5.21.1",
     "typescript": "^5"
   }
 }

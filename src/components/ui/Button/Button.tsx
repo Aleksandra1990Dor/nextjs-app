@@ -2,8 +2,11 @@
 
 import styled from '@emotion/styled/base'
 import { Button as MUIButton } from '@mui/material'
+import { LoadingButton as MUILoadingButton } from '@mui/lab'
 
-const Button = styled(MUIButton)({
+type StyledOptionsType = Parameters<ReturnType<typeof styled>>[1]
+
+const styledOptions: StyledOptionsType = {
 	backgroundColor: 'var(--primary)',
 	textTransform: 'none',
 	padding: '3px 40px',
@@ -19,6 +22,7 @@ const Button = styled(MUIButton)({
 	'&:active': {
 		backgroundColor: 'var(--primary)'
 	}
-})
+}
 
-export default Button
+export const Button = styled(MUIButton)(styledOptions)
+export const LoadingButton = styled(MUILoadingButton)(styledOptions)

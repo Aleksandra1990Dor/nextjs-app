@@ -1,5 +1,5 @@
 export { default as Title } from './Title/Title'
-export { default as Button } from './Button/Button'
+export { Button, LoadingButton } from './Button/Button'
 export { default as Section } from './Section/Section'
 export { default as Card } from './Card/Card'
 export { default as Typography } from './Typography/Typography'
