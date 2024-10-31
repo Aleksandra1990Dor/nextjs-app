@@ -1,5 +1,5 @@
-import type { FC } from 'react'
-import { Card, Section, Title, Typography } from '@/components/ui'
+import { type FC } from 'react'
+import { Card, Section, Title, Typography, VideoPlayer } from '@/components/ui'
 
 const TitleSection: FC = () => {
 	return (
@@ -13,7 +13,7 @@ const TitleSection: FC = () => {
 					mollitia.
 				</Typography>
 			</Card>
-			<div>YouTube video</div>
+			<VideoPlayer />
 		</Section>
 	)
 }

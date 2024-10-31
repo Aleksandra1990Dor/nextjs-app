@@ -6,7 +6,7 @@ const Form = styled('form')({
 	width: '40%',
 	display: 'flex',
 	flexDirection: 'column',
-	gap: '10px',
+	gap: '26px',
 	backgroundColor: 'var(--white)',
 	padding: '40px',
 	borderRadius: '8px',

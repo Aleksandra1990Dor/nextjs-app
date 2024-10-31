@@ -1,16 +1,20 @@
 'use client'
 
 import { ROUTES_DATA } from '@/shared/consts'
-import styled from '@emotion/styled/base'
+import { styled } from '@mui/material'
 import { usePathname } from 'next/navigation'
 import { FC, PropsWithChildren } from 'react'
 
-export const MainWrapper = styled('div')({
+export const MainWrapper = styled('div')(({ theme }) => ({
 	minHeight: '100%',
 	padding: '82px 0 100px 0',
 	display: 'flex',
-	flexDirection: 'column'
-})
+	flexDirection: 'column',
+
+	[theme.breakpoints.down('sm')]: {
+		padding: '82px 0 60px 0'
+	}
+}))
 
 const Container = styled('main', {
 	shouldForwardProp: prop => prop !== 'isColoredBg'

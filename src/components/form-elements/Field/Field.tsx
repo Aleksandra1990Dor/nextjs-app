@@ -20,7 +20,8 @@ const StyledField = styled(TextField)({
 	},
 	'& .MuiOutlinedInput-root': {
 		'& fieldset': {
-			borderColor: 'var(--secondary)'
+			borderColor: 'var(--secondary)',
+			transition: 'border-color .5s ease'
 		},
 		'&.Mui-focused fieldset': {
 			borderColor: '#c2b8af'

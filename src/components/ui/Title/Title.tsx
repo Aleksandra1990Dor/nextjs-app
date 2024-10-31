@@ -12,7 +12,9 @@ const Title = (props: PropsWithChildren<ITitleProps>) => {
 	return (
 		<>
 			{variant === 'default' && <TitleDefault>{children}</TitleDefault>}
-			{variant === 'main' && <TitleMain>{children}</TitleMain>}
+			{variant === 'main' && (
+				<TitleMain isLarge={isLarge}>{children}</TitleMain>
+			)}
 			{variant === 'small' && (
 				<TitleSmall isLarge={isLarge}>{children}</TitleSmall>
 			)}

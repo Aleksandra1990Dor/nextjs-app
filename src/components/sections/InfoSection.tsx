@@ -20,7 +20,13 @@ const InfoSection: FC = () => {
 	return (
 		<Section gap='40px' colored>
 			<Title>Also very important title</Title>
-			<Grid2 container spacing={4} justifyContent={'space-between'}>
+			<Grid2
+				container
+				columnSpacing={{ lg: 4, xs: 2 }}
+				rowSpacing={4}
+				justifyContent={{ xs: 'center', md: 'space-between' }}
+				px={{ xs: 3, sm: 0 }}
+			>
 				{cards.map(card => (
 					<Card isSmall key={card.id}>
 						<Title variant='small'>{card.title}</Title>

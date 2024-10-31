@@ -37,6 +37,7 @@ const ContactForm: FC = () => {
 					/>
 					<LoadingButton
 						type='submit'
+						isLarge
 						loading={isLoading}
 						loadingIndicator={
 							<CircularProgress sx={{ color: 'var(--white)' }} size={16} />
