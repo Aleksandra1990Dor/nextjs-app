@@ -12,7 +12,7 @@ export const MainWrapper = styled('div')(({ theme }) => ({
 	flexDirection: 'column',
 
 	[theme.breakpoints.down('sm')]: {
-		padding: '82px 0 60px 0'
+		padding: '80px 0 60px 0'
 	}
 }))
 
