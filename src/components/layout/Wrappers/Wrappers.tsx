@@ -3,7 +3,7 @@
 import { ROUTES_DATA } from '@/shared/consts'
 import { styled } from '@mui/material'
 import { usePathname } from 'next/navigation'
-import { FC, PropsWithChildren } from 'react'
+import { FC, PropsWithChildren, useEffect } from 'react'
 
 export const MainWrapper = styled('div')(({ theme }) => ({
 	minHeight: '100%',
@@ -31,6 +31,10 @@ const Container = styled('main', {
 export const ContentContainer: FC<PropsWithChildren> = ({ children }) => {
 	const pathname = usePathname()
 	const isContactsPage = pathname.startsWith(ROUTES_DATA.contactUs)
+
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [pathname])
 
 	return <Container isColoredBg={isContactsPage}>{children}</Container>
 }

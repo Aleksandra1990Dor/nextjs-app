@@ -27,13 +27,13 @@ const Section = styled('section', {
 		},
 
 		[theme.breakpoints.down('md')]: {
-			gap: flexDirection === 'row' ? '60px' : '40px',
+			gap: '60px',
 			flexDirection: flexDirection === 'column' ? 'column' : 'column-reverse',
 			padding: '40px'
 		},
 
 		[theme.breakpoints.down('sm')]: {
-			padding: '30px 20px'
+			padding: '30px 20px 40px 20px'
 		}
 	})
 )
