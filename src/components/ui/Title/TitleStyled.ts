@@ -15,8 +15,13 @@ export const TitleMain = styled('h1', {
 	fontSize: isLarge ? '80px' : '40px',
 	textAlign: isLarge ? 'center' : undefined,
 
+	[theme.breakpoints.down('md')]: {
+		fontSize: isLarge ? '48px' : '40px'
+	},
+
 	[theme.breakpoints.down('sm')]: {
-		textAlign: 'center'
+		textAlign: 'center',
+		fontSize: '40px'
 	}
 }))
 

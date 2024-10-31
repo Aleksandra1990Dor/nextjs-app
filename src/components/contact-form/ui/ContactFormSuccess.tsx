@@ -4,7 +4,7 @@ import type { FC } from 'react'
 
 const ContactFormSuccess: FC = () => {
 	return (
-		<Box sx={{ maxWidth: '50%' }}>
+		<Box sx={{ maxWidth: { md: '50%', xs: '90%' } }}>
 			<Title variant='main' isLarge>
 				Message generated on the server
 			</Title>
