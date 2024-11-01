@@ -2,9 +2,9 @@
 
 import { styled } from '@mui/material'
 
- const MainWrapper = styled('div')(({ theme }) => ({
+const MainWrapper = styled('div')(({ theme }) => ({
 	minHeight: '100%',
-	padding: '82px 0 100px 0',
+	padding: '80px 0 100px 0',
 	display: 'flex',
 	flexDirection: 'column',
 
