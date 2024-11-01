@@ -1,37 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# README для Проекта Двухстраничного Вебсайта
 
-## Getting Started
+## Обзор Проекта
+Этот проект представляет собой двухстраничный вебсайт, состоящий из главной страницы и страницы контактов, которая включает форму. Встроенный бекенд записывает данные формы в базу и отвечает сообщением "Спасибо за ваш интерес, имя". Дизайн основывается на предоставленных макетах и соблюдает современные стандарты веб-разработки.
 
-First, run the development server:
+### Ссылки на Макеты
+- Главная Страница: [Макет Главной Страницы](https://download.cadexchanger.com/documents/hiring/frontend/main.svg)
+- Страница "Связаться с Нами" с Формой: [Макет Страницы Контактов](https://download.cadexchanger.com/documents/hiring/frontend/form.svg)
+- Страница "Связаться с Нами" После Отправки: [Макет Страницы Ответа](https://download.cadexchanger.com/documents/hiring/frontend/response.svg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Функциональные Требования
+1. Страницы включают элементы макета из макетов, поддерживая их относительное позиционирование.
+2. Дизайн адаптивен для различных размеров экрана.
+3. Обе страницы имеют закрепленный хедер и футер.
+4. Главная страница включает встроенное видео с YouTube по [этой ссылке](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
+5. Все кнопки "Связаться с Нами" ссылаются на страницу "Связаться с Нами".
+6. Все поля в контактной форме обязательны для заполнения.
+7. После отправки формы данные отправляются на встроенный бэкенд.
+8. Бэкенд записывает отправленные данные в базу данных и отвечает персонализированным сообщением, которое после выводится в консоль.
+9. Страница "Связаться с Нами" обновляется, чтобы отобразить сообщение ответа после отправки.
+10. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Технические Требования
+- Язык: TypeScript
+- Фреймворк: Nextjs
+- Стилизация: CSS-in-JS библиотека (Material UI with Styled Components)
+- Бандлер: Next
+- SEO и Доступность: Соблюдение лучших практик SEO и доступности, с акцентом на Core Web Vitals.
+- Реализация Формы: Использует компоненты из библиотеки Material UI.
+- Пользовательская Стилизация: Поля формы стилизованы для повышения пользовательского опыта.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Дополнительные Задания
+- Демонстрация продвинутой техники CSS: Использование комбинации CSS Grid и Flexbox для создания гибкой компоновки, которая адаптируется к различным размерам экранов, сохраняя при этом удобство использования и эстетику.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Инструкции по Настройке Проекта
+1. Клонируйте Репозиторий:
+      ```bash
+      git clone <https://github.com/Aleksandra1990Dor/nextjs-app.git>
+      cd <repository-name>
+      ```
+   
+2. Установите Зависимости:
+      ```bash
+      npm install
+      ```
+   
+3. Запустите Сервер Разработки:
+      ```bash
+      npm run dev
+      ```
+   
+4. Откройте ваш браузер и перейдите по адресу:
+   
+   http://localhost:3000
+   
 
-## Learn More
+## Подробности Хостинга
+Проект и база данных размещены на сервисе Vercel.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# nextjs-app
+## Стратегии SEO и Производительности
+- Использован React H-elmet для управления данными заголовка документа.
+- Реализована загрузка видео с YouTube с библиотекой react-player с целью улучшения показателей Largest Content Paint (LCP).
+- Использован адаптивный дизайн с медиа-запросами и гибкими единицами для обеспечения оптимального пользовательского опыта на всех устройствах.
