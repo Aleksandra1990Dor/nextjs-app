@@ -22,16 +22,14 @@ export const useContactForm = (
 	const onSubmit = async (data: ContactFormType) => {
 		setIsLoading(true)
 
-		const {
-			data: { name }
-		} = await postContact(data)
+		const { data: response } = await postContact(data)
 
 		reset(defaultValues)
 
 		setIsLoading(false)
 		setIsSuccess(true)
 
-		console.log(`Thank you for your interest, ${name}!`)
+		console.log(response)
 	}
 
 	return {
