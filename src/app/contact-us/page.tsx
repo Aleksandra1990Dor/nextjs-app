@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import { ContactUsPage } from '@/pages'
+import { ContactUsPage } from '@/app-pages'
 
 export const metadata: Metadata = {
 	title: 'Contact us',

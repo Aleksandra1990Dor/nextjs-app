@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { MainPage } from '@/pages'
+
+import { MainPage } from '@/app-pages'
 
 export const metadata: Metadata = {
 	title: 'Main page',
