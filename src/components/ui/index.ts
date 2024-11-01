@@ -1,6 +1,0 @@
-export { default as Title } from './Title/Title'
-export { Button, LoadingButton } from './Button/Button'
-export { default as Section } from './Section/Section'
-export { default as Card } from './Card/Card'
-export { default as Typography } from './Typography/Typography'
-export { default as VideoPlayer } from './VIdeoPlayer/VideoPlayer'

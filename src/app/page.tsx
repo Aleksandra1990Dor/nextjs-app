@@ -1,15 +1,11 @@
-import {
-	ContactsSection,
-	InfoSection,
-	TitleSection
-} from '@/components/sections'
+import type { Metadata } from 'next'
+import { MainPage } from '@/pages'
+
+export const metadata: Metadata = {
+	title: 'Main page',
+	description: 'Main page for test website'
+}
 
 export default function Home() {
-	return (
-		<>
-			<TitleSection />
-			<InfoSection />
-			<ContactsSection />
-		</>
-	)
+	return <MainPage />
 }

@@ -1,28 +1,9 @@
-import type { Metadata } from 'next'
-import localFont from 'next/font/local'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter'
-import { MainLayout } from '@/components/layout'
 
-import './globals.css'
-import { ThemeProvider } from '@mui/material'
-import theme from '@/theme'
+import { MainLayout } from '@/shared/ui'
+import { geistMono } from '@/shared/assets'
 
-const geistSans = localFont({
-	src: './fonts/GeistVF.woff',
-	variable: '--font-geist-sans',
-	weight: '100 500 900'
-})
-
-const geistMono = localFont({
-	src: './fonts/GeistMonoVF.woff',
-	variable: '--font-geist-mono',
-	weight: '100 500 900'
-})
-
-export const metadata: Metadata = {
-	title: 'Main page',
-	description: 'Main page for test website'
-}
+import '@/shared/assets/globals.css'
 
 export default function RootLayout({
 	children
@@ -31,11 +12,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${geistSans.variable} ${geistMono.variable}`}>
+			<body className={`${geistMono.variable}`}>
 				<AppRouterCacheProvider options={{ key: 'css' }}>
-					<ThemeProvider theme={theme}>
-						<MainLayout>{children}</MainLayout>
-					</ThemeProvider>
+					<MainLayout>{children}</MainLayout>
 				</AppRouterCacheProvider>
 			</body>
 		</html>

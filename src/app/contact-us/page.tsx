@@ -1,5 +1,12 @@
-import { ContactForm } from '@/components/contact-form'
+import { Metadata } from 'next'
 
-export default function Home() {
-	return <ContactForm />
+import { ContactUsPage } from '@/pages'
+
+export const metadata: Metadata = {
+	title: 'Contact us',
+	description: 'Contact us page with the form'
+}
+
+export default function ContactUs() {
+	return <ContactUsPage />
 }

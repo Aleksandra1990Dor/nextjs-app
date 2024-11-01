@@ -1,1 +1,1 @@
-export { ROUTES_DATA } from './router.data'
+export { ROUTES_DATA } from './routes/router.data'
